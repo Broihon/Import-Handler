@@ -24,7 +24,7 @@ bool GetProcAddressEx(HANDLE hTargetProc, HINSTANCE hModule, const char * szProc
 //
 //Arguments:
 //		hTargetProc (HANDLE):
-///			A handle to the target process with either PROCESS_QUERY_INFORMATION or PROCESS_QUERY_LIMITED_INFORMATION.
+///			A handle to the target process with PROCESS_VM_READ and either PROCESS_QUERY_INFORMATION or PROCESS_QUERY_LIMITED_INFORMATION.
 //		hModule (HINSTANCE):
 ///			The base address of the module.
 //		szProcName (const char*):
@@ -61,7 +61,7 @@ bool GetProcAddressEx_WOW64(HANDLE hTargetProc, HINSTANCE hModule, const char * 
 //
 //Arguments:
 //		hTargetProc (HANDLE):
-///			A handle to the target process with either PROCESS_QUERY_INFORMATION or PROCESS_QUERY_LIMITED_INFORMATION.
+///			A handle to the target process with PROCESS_VM_READ and either PROCESS_QUERY_INFORMATION or PROCESS_QUERY_LIMITED_INFORMATION.
 //		hModule (HINSTANCE):
 ///			The base address of the module.
 //		szProcName (const char*):
